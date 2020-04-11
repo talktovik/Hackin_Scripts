@@ -13,6 +13,5 @@ with open("","r") as wordlist_file:
         word = line.strip()
         test_url = target_url +  "/" + word
         response =request(test_url)
-        print(test_url)
         if response:
             print("[+] Discovered the path -->" + test_url)
