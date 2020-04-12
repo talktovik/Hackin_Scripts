@@ -7,7 +7,7 @@ def request(url):
         pass
 
 
-target_url = "bujhansi"
+target_url = input("what is the name of target website.please don't add https:// with url")
 with open("","r") as wordlist_file:
     for line in wordlist_file:
         word = line.strip()
